@@ -131,6 +131,7 @@ function buildDesignIndex() {
       const systemName = firstString(meta.system?.title, meta.system?.name, systemId);
       const authors = normalizeAuthors(meta);
       const tags = normalizeTags(meta.tags);
+      const units = firstString(meta.units, meta.unit);
       const thumbnail = normalizeRelativeFile(
         designDir,
         designRepoPath,
@@ -162,6 +163,7 @@ function buildDesignIndex() {
         authors,
         author: authors.join(", "),
         tags,
+        units,
         thumbnail: thumbnail.path,
         design_url: designFile.path,
         meta_url: posixPath(designRepoPath, "meta.json"),
@@ -228,6 +230,7 @@ ${description}
 | ID | \`${markdownEscape(design.id)}\` |
 | Group | \`${markdownEscape(design.group)}\` |
 | System | ${systemLink} |
+| Units | ${design.units ? `\`${markdownEscape(design.units)}\`` : "_Not specified_"} |
 | Author | ${markdownEscape(author)} |
 | Tags | ${tags} |
 
@@ -256,12 +259,14 @@ function buildDesignCard(design) {
   const author = design.author ? `<br><sub>by ${htmlEscape(design.author)}</sub>` : "";
   const description = design.description ? `<br>${htmlEscape(design.description)}` : "";
   const title = htmlEscape(design.title);
+  const units = design.units ? `<br><sub>Units: <code>${htmlEscape(design.units)}</code></sub>` : "";
 
   return [
     `<a href="${design.path}"><img src="${design.thumbnail}" alt="${title}" width="100%"></a>`,
     `<br><strong><a href="${design.path}">${title}</a></strong>`,
     description,
     `<br><sub><code>${htmlEscape(design.id)}</code></sub>`,
+    units,
     author,
     tags,
     `<br><a href="${design.design_url}">design.json</a> / <a href="${design.meta_url}">meta.json</a>`,

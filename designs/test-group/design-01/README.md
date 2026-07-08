@@ -13,6 +13,7 @@ A chair frame prototype generated from reclaimed plastic bottles using the bottl
 | ID | `test-group_design-01` |
 | Group | `test-group` |
 | System | [bottles-system](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/bottles-system) |
+| Units | `mm` |
 | Author | _Unknown author_ |
 | Tags | `furniture` `test` `plastic` `bottles` |
 

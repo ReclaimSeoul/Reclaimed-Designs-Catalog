@@ -13,6 +13,7 @@ A small pavillion prototype generated from reclaimed plastic bottles using the p
 | ID | `test-group_design-02` |
 | Group | `test-group` |
 | System | [plasticbottles](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles) |
+| Units | `mm` |
 | Author | _Unknown author_ |
 | Tags | `pavillion` `test` `plastic` `bottles` |
 

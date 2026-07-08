@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T09:36:43.794Z",
+  "generated_at": "2026-07-08T09:42:51.698Z",
   "count": 3,
   "systems": [
     {
@@ -29,6 +29,7 @@
             "plastic",
             "bottles"
           ],
+          "units": "mm",
           "thumbnail": "designs/test-group/design-01/00_thumb.png",
           "design_url": "designs/test-group/design-01/design.json",
           "meta_url": "designs/test-group/design-01/meta.json"
@@ -63,6 +64,7 @@
             "plastic",
             "bottles"
           ],
+          "units": "mm",
           "thumbnail": "designs/test-group/design-03/00_thumb.png",
           "design_url": "designs/test-group/design-03/design.json",
           "meta_url": "designs/test-group/design-03/meta.json"
@@ -88,6 +90,7 @@
             "plastic",
             "bottles"
           ],
+          "units": "mm",
           "thumbnail": "designs/test-group/design-02/00_thumb.png",
           "design_url": "designs/test-group/design-02/design.json",
           "meta_url": "designs/test-group/design-02/meta.json"

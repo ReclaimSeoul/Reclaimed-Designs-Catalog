@@ -13,6 +13,7 @@ A random test prototype generated from reclaimed plastic bottles using the plast
 | ID | `test-group_design-03` |
 | Group | `test-group` |
 | System | [plasticbottles](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles) |
+| Units | `mm` |
 | Author | _Unknown author_ |
 | Tags | `random` `test` `plastic` `bottles` |
 
