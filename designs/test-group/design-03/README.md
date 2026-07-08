@@ -1,20 +1,20 @@
-# Small Pavillion
+# Random Test
 
-![Small Pavillion](00_thumb.png)
+![Random Test](00_thumb.png)
 
 ## Description
 
-A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.
+A random test prototype generated from reclaimed plastic bottles using the plasticbottles design system.
 
 ## Information
 
 | Field | Value |
 |---|---|
-| ID | `test-group_design-02` |
+| ID | `test-group_design-03` |
 | Group | `test-group` |
 | System | [plasticbottles](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles) |
 | Author | _Unknown author_ |
-| Tags | `pavillion` `test` `plastic` `bottles` |
+| Tags | `random` `test` `plastic` `bottles` |
 
 ## Files
 

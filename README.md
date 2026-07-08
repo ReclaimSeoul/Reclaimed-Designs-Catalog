@@ -14,7 +14,7 @@ Design outputs and assembled proposals generated from the Reclaim Seoul design s
 
 |  |  |
 |---|---|
-| [![Small Pavillion](designs/test-group/design-02/00_thumb.png)](designs/test-group/design-02)<br>**[Small Pavillion](designs/test-group/design-02)**<br>A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub>`test-group_design-02`</sub><br><sub>`pavillion` `test` `plastic` `bottles`</sub><br>[design.json](designs/test-group/design-02/design.json) / [meta.json](designs/test-group/design-02/meta.json) |  |
+| [![Random Test](designs/test-group/design-03/00_thumb.png)](designs/test-group/design-03)<br>**[Random Test](designs/test-group/design-03)**<br>A random test prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub>`test-group_design-03`</sub><br><sub>`random` `test` `plastic` `bottles`</sub><br>[design.json](designs/test-group/design-03/design.json) / [meta.json](designs/test-group/design-03/meta.json) | [![Small Pavillion](designs/test-group/design-02/00_thumb.png)](designs/test-group/design-02)<br>**[Small Pavillion](designs/test-group/design-02)**<br>A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub>`test-group_design-02`</sub><br><sub>`pavillion` `test` `plastic` `bottles`</sub><br>[design.json](designs/test-group/design-02/design.json) / [meta.json](designs/test-group/design-02/meta.json) |
 
 ## Repository structure
 
