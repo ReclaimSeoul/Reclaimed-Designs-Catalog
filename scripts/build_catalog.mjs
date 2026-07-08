@@ -73,6 +73,14 @@ function markdownEscape(value) {
   return String(value).replaceAll("|", "\\|").trim();
 }
 
+function htmlEscape(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .trim();
+}
 function normalizeRelativeFile(designDir, designRepoPath, filename, fallback, label) {
   const raw = firstString(filename, fallback);
   assert(raw, `Missing ${label} filename in ${path.relative(REPO_ROOT, designDir)}`);
@@ -243,19 +251,20 @@ function writeDesignReadmes(designs) {
 
 function buildDesignCard(design) {
   const tags = design.tags.length
-    ? `<br><sub>${design.tags.map((tag) => `\`${markdownEscape(tag)}\``).join(" ")}</sub>`
+    ? `<br><sub>${design.tags.map((tag) => `<code>${htmlEscape(tag)}</code>`).join(" ")}</sub>`
     : "";
-  const author = design.author ? `<br><sub>by ${markdownEscape(design.author)}</sub>` : "";
-  const description = design.description ? `<br>${markdownEscape(design.description)}` : "";
+  const author = design.author ? `<br><sub>by ${htmlEscape(design.author)}</sub>` : "";
+  const description = design.description ? `<br>${htmlEscape(design.description)}` : "";
+  const title = htmlEscape(design.title);
 
   return [
-    `[![${markdownEscape(design.title)}](${design.thumbnail})](${design.path})`,
-    `<br>**[${markdownEscape(design.title)}](${design.path})**`,
+    `<a href="${design.path}"><img src="${design.thumbnail}" alt="${title}" width="100%"></a>`,
+    `<br><strong><a href="${design.path}">${title}</a></strong>`,
     description,
-    `<br><sub>\`${markdownEscape(design.id)}\`</sub>`,
+    `<br><sub><code>${htmlEscape(design.id)}</code></sub>`,
     author,
     tags,
-    `<br>[design.json](${design.design_url}) / [meta.json](${design.meta_url})`,
+    `<br><a href="${design.design_url}">design.json</a> / <a href="${design.meta_url}">meta.json</a>`,
   ].join("");
 }
 
@@ -278,17 +287,19 @@ function buildRootReadme(designs) {
     const heading = system.path ? `[${system.name}](${system.path})` : system.name;
     lines.push(`### ${heading}`, "");
 
-    lines.push("|  |  |");
-    lines.push("|---|---|");
+    lines.push("<table>");
 
     for (let index = 0; index < system.designs.length; index += 2) {
       const left = buildDesignCard(system.designs[index]);
       const right = system.designs[index + 1] ? buildDesignCard(system.designs[index + 1]) : "";
-      lines.push(`| ${left} | ${right} |`);
+      lines.push("  <tr>");
+      lines.push(`    <td width="50%" valign="top">${left}</td>`);
+      lines.push(`    <td width="50%" valign="top">${right}</td>`);
+      lines.push("  </tr>");
     }
 
-    lines.push("");
-  }
+    lines.push("</table>");
+    lines.push("");  }
 
   lines.push("## Repository structure", "");
   lines.push("```text");

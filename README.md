@@ -6,15 +6,21 @@ Design outputs and assembled proposals generated from the Reclaim Seoul design s
 
 ### [bottles-system](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/bottles-system)
 
-|  |  |
-|---|---|
-| [![Chair Frame](designs/test-group/design-01/00_thumb.png)](designs/test-group/design-01)<br>**[Chair Frame](designs/test-group/design-01)**<br>A chair frame prototype generated from reclaimed plastic bottles using the bottles design system.<br><sub>`test-group_design-01`</sub><br><sub>`furniture` `test` `plastic` `bottles`</sub><br>[design.json](designs/test-group/design-01/design.json) / [meta.json](designs/test-group/design-01/meta.json) |  |
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="designs/test-group/design-01"><img src="designs/test-group/design-01/00_thumb.png" alt="Chair Frame" width="100%"></a><br><strong><a href="designs/test-group/design-01">Chair Frame</a></strong><br>A chair frame prototype generated from reclaimed plastic bottles using the bottles design system.<br><sub><code>test-group_design-01</code></sub><br><sub><code>furniture</code> <code>test</code> <code>plastic</code> <code>bottles</code></sub><br><a href="designs/test-group/design-01/design.json">design.json</a> / <a href="designs/test-group/design-01/meta.json">meta.json</a></td>
+    <td width="50%" valign="top"></td>
+  </tr>
+</table>
 
 ### [plasticbottles](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles)
 
-|  |  |
-|---|---|
-| [![Random Test](designs/test-group/design-03/00_thumb.png)](designs/test-group/design-03)<br>**[Random Test](designs/test-group/design-03)**<br>A random test prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub>`test-group_design-03`</sub><br><sub>`random` `test` `plastic` `bottles`</sub><br>[design.json](designs/test-group/design-03/design.json) / [meta.json](designs/test-group/design-03/meta.json) | [![Small Pavillion](designs/test-group/design-02/00_thumb.png)](designs/test-group/design-02)<br>**[Small Pavillion](designs/test-group/design-02)**<br>A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub>`test-group_design-02`</sub><br><sub>`pavillion` `test` `plastic` `bottles`</sub><br>[design.json](designs/test-group/design-02/design.json) / [meta.json](designs/test-group/design-02/meta.json) |
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="designs/test-group/design-03"><img src="designs/test-group/design-03/00_thumb.png" alt="Random Test" width="100%"></a><br><strong><a href="designs/test-group/design-03">Random Test</a></strong><br>A random test prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub><code>test-group_design-03</code></sub><br><sub><code>random</code> <code>test</code> <code>plastic</code> <code>bottles</code></sub><br><a href="designs/test-group/design-03/design.json">design.json</a> / <a href="designs/test-group/design-03/meta.json">meta.json</a></td>
+    <td width="50%" valign="top"><a href="designs/test-group/design-02"><img src="designs/test-group/design-02/00_thumb.png" alt="Small Pavillion" width="100%"></a><br><strong><a href="designs/test-group/design-02">Small Pavillion</a></strong><br>A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.<br><sub><code>test-group_design-02</code></sub><br><sub><code>pavillion</code> <code>test</code> <code>plastic</code> <code>bottles</code></sub><br><a href="designs/test-group/design-02/design.json">design.json</a> / <a href="designs/test-group/design-02/meta.json">meta.json</a></td>
+  </tr>
+</table>
 
 ## Repository structure
 
