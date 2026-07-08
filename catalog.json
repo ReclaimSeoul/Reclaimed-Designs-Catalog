@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-08T09:15:47.077Z",
-  "count": 1,
+  "generated_at": "2026-07-08T09:22:26.163Z",
+  "count": 2,
   "systems": [
     {
       "id": "bottles-system",
@@ -32,6 +32,40 @@
           "thumbnail": "designs/test-group/design-01/00_thumb.png",
           "design_url": "designs/test-group/design-01/design.json",
           "meta_url": "designs/test-group/design-01/meta.json"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": "plasticbottles",
+      "name": "plasticbottles",
+      "repo": "Reclaimed-Design-Systems",
+      "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles",
+      "designs": [
+        {
+          "id": "test-group_design-02",
+          "slug": "design-02",
+          "title": "Small Pavillion",
+          "description": "A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.",
+          "group": "test-group",
+          "path": "designs/test-group/design-02",
+          "system": {
+            "id": "plasticbottles",
+            "name": "plasticbottles",
+            "repo": "Reclaimed-Design-Systems",
+            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles"
+          },
+          "authors": [],
+          "author": "",
+          "tags": [
+            "pavillion",
+            "test",
+            "plastic",
+            "bottles"
+          ],
+          "thumbnail": "designs/test-group/design-02/00_thumb.png",
+          "design_url": "designs/test-group/design-02/design.json",
+          "meta_url": "designs/test-group/design-02/meta.json"
         }
       ],
       "count": 1

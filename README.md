@@ -16,6 +16,18 @@ A chair frame prototype generated from reclaimed plastic bottles using the bottl
 
 [design.json](designs/test-group/design-01/design.json) | [meta.json](designs/test-group/design-01/meta.json)
 
+### [plasticbottles](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles)
+
+#### [Small Pavillion](designs/test-group/design-02)
+
+[![Small Pavillion](designs/test-group/design-02/00_thumb.png)](designs/test-group/design-02)
+
+A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.
+
+`test-group_design-02` `pavillion` `test` `plastic` `bottles`
+
+[design.json](designs/test-group/design-02/design.json) | [meta.json](designs/test-group/design-02/meta.json)
+
 ## Repository structure
 
 ```text
