@@ -1,0 +1,21 @@
+    {
+  "id": "test-group_design-02",
+  "title": "Small Pavillion",
+  "group": "test-group",
+  "system": {
+    "id": "plasticbottles",
+    "repo": "Reclaimed-Design-Systems",
+    "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles"
+  },
+  "files": {
+    "thumbnail": "00_thumb.png",
+    "design": "design.json"
+  },
+  "tags": [
+    "pavillion",
+    "test",
+    "plastic",
+    "bottles"
+  ],
+  "description": "A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system."
+}
