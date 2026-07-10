@@ -73,6 +73,13 @@ function markdownEscape(value) {
   return String(value).replaceAll("|", "\\|").trim();
 }
 
+function titleFromSlug(slug) {
+  return slug
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
 function htmlEscape(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -99,6 +106,7 @@ function buildDesignIndex() {
   assert(exists(DESIGNS_DIR), `Missing folder: ${path.relative(REPO_ROOT, DESIGNS_DIR)}`);
 
   const designs = [];
+  const groups = [];
   const groupFolders = fs
     .readdirSync(DESIGNS_DIR, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
@@ -108,6 +116,12 @@ function buildDesignIndex() {
   for (const groupFolder of groupFolders) {
     const groupSlug = validateSlug(groupFolder, "group folder");
     const groupDir = path.join(DESIGNS_DIR, groupFolder);
+    const group = {
+      id: groupSlug,
+      name: titleFromSlug(groupSlug),
+      designs: [],
+    };
+    groups.push(group);
     const designFolders = fs
       .readdirSync(groupDir, { withFileTypes: true })
       .filter((entry) => entry.isDirectory())
@@ -147,7 +161,7 @@ function buildDesignIndex() {
         "design file",
       );
 
-      designs.push({
+      const design = {
         id: firstString(meta.id, `${groupSlug}_${designSlug}`),
         slug: designSlug,
         title,
@@ -167,11 +181,18 @@ function buildDesignIndex() {
         thumbnail: thumbnail.path,
         design_url: designFile.path,
         meta_url: posixPath(designRepoPath, "meta.json"),
-      });
+      };
+      designs.push(design);
+      group.designs.push(design);
     }
   }
 
-  return designs.sort((a, b) => a.system.id.localeCompare(b.system.id) || a.title.localeCompare(b.title));
+  designs.sort((a, b) => a.system.id.localeCompare(b.system.id) || a.title.localeCompare(b.title));
+  for (const group of groups) {
+    group.designs.sort((a, b) => a.title.localeCompare(b.title));
+  }
+
+  return { designs, groups };
 }
 
 function groupBySystem(designs) {
@@ -273,8 +294,7 @@ function buildDesignCard(design) {
   ].join("");
 }
 
-function buildRootReadme(designs) {
-  const systems = groupBySystem(designs);
+function buildRootReadme(groups) {
   const lines = [
     "# Reclaimed-Designs-Catalog",
     "",
@@ -284,19 +304,18 @@ function buildRootReadme(designs) {
     "",
   ];
 
-  if (!systems.length) {
-    lines.push("_No designs have been added yet._", "");
-  }
+  for (const group of groups) {
+    lines.push(`### ${group.name}`, "");
 
-  for (const system of systems) {
-    const heading = system.path ? `[${system.name}](${system.path})` : system.name;
-    lines.push(`### ${heading}`, "");
+    if (!group.designs.length) {
+      continue;
+    }
 
     lines.push("<table>");
 
-    for (let index = 0; index < system.designs.length; index += 2) {
-      const left = buildDesignCard(system.designs[index]);
-      const right = system.designs[index + 1] ? buildDesignCard(system.designs[index + 1]) : "";
+    for (let index = 0; index < group.designs.length; index += 2) {
+      const left = buildDesignCard(group.designs[index]);
+      const right = group.designs[index + 1] ? buildDesignCard(group.designs[index + 1]) : "";
       lines.push("  <tr>");
       lines.push(`    <td width="50%" valign="top">${left}</td>`);
       lines.push(`    <td width="50%" valign="top">${right}</td>`);
@@ -327,13 +346,13 @@ function buildRootReadme(designs) {
   return lines.join("\n");
 }
 
-function writeRootReadme(designs) {
-  fs.writeFileSync(README_PATH, buildRootReadme(designs), "utf8");
+function writeRootReadme(groups) {
+  fs.writeFileSync(README_PATH, buildRootReadme(groups), "utf8");
 }
 
-const designs = buildDesignIndex();
+const { designs, groups } = buildDesignIndex();
 writeCatalog(designs);
-writeRootReadme(designs);
+writeRootReadme(groups);
 writeDesignReadmes(designs);
 
 console.log(`Generated catalog and README files for ${designs.length} design(s).`);
