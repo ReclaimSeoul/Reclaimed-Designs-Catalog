@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T05:26:45.620Z",
+  "generated_at": "2026-07-10T12:47:55.702Z",
   "count": 3,
   "systems": [
     {
@@ -32,7 +32,11 @@
           "units": "mm",
           "thumbnail": "designs/test-group/design-01/00_thumb.png",
           "design_url": "designs/test-group/design-01/design.json",
-          "meta_url": "designs/test-group/design-01/meta.json"
+          "meta_url": "designs/test-group/design-01/meta.json",
+          "assets": [
+            "designs/test-group/design-01/assets/Gemini_Generated_Image_bmjeslbmjeslbmje.png",
+            "designs/test-group/design-01/assets/Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png"
+          ]
         }
       ],
       "count": 1
@@ -67,7 +71,8 @@
           "units": "mm",
           "thumbnail": "designs/test-group/design-03/00_thumb.png",
           "design_url": "designs/test-group/design-03/design.json",
-          "meta_url": "designs/test-group/design-03/meta.json"
+          "meta_url": "designs/test-group/design-03/meta.json",
+          "assets": []
         },
         {
           "id": "test-group_design-02",
@@ -93,7 +98,8 @@
           "units": "mm",
           "thumbnail": "designs/test-group/design-02/00_thumb.png",
           "design_url": "designs/test-group/design-02/design.json",
-          "meta_url": "designs/test-group/design-02/meta.json"
+          "meta_url": "designs/test-group/design-02/meta.json",
+          "assets": []
         }
       ],
       "count": 2

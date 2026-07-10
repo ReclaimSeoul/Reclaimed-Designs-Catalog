@@ -8,6 +8,7 @@ const README_PATH = path.join(REPO_ROOT, "README.md");
 
 const GENERATED_NOTE =
   "This README was generated automatically from `meta.json` by `scripts/build_catalog.mjs`.";
+const IMAGE_EXTENSIONS = new Set([".avif", ".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"]);
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -102,6 +103,22 @@ function normalizeRelativeFile(designDir, designRepoPath, filename, fallback, la
   };
 }
 
+function findAssetImages(designDir, designRepoPath) {
+  const assetsDir = path.join(designDir, "assets");
+  if (!exists(assetsDir)) return [];
+
+  assert(
+    fs.statSync(assetsDir).isDirectory(),
+    `${path.relative(REPO_ROOT, assetsDir)} must be a directory`,
+  );
+
+  return fs
+    .readdirSync(assetsDir, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase()))
+    .map((entry) => posixPath(designRepoPath, "assets", entry.name))
+    .sort((a, b) => a.localeCompare(b));
+}
+
 function buildDesignIndex() {
   assert(exists(DESIGNS_DIR), `Missing folder: ${path.relative(REPO_ROOT, DESIGNS_DIR)}`);
 
@@ -181,6 +198,7 @@ function buildDesignIndex() {
         thumbnail: thumbnail.path,
         design_url: designFile.path,
         meta_url: posixPath(designRepoPath, "meta.json"),
+        assets: findAssetImages(designDir, designRepoPath),
       };
       designs.push(design);
       group.designs.push(design);
@@ -235,6 +253,7 @@ function buildDesignReadme(design) {
   const systemLink = design.system.path
     ? `[${design.system.name}](${design.system.path})`
     : design.system.name;
+  const assetGallery = buildAssetGallery(design);
 
   return `# ${design.title}
 
@@ -259,12 +278,32 @@ ${description}
 
 - [${designFile}](${designFile})
 - [meta.json](meta.json)
-- [${thumbFile}](${thumbFile})
+- [${thumbFile}](${thumbFile})${assetGallery}
 
 ---
 
 ${GENERATED_NOTE}
 `;
+}
+
+function buildAssetGallery(design) {
+  if (!design.assets.length) return "";
+
+  const lines = ["", "## Assets", "", "<table>"];
+  for (let index = 0; index < design.assets.length; index += 2) {
+    const cells = design.assets.slice(index, index + 2).map((assetPath) => {
+      const relativePath = path.posix.relative(design.path, assetPath);
+      const filename = path.posix.basename(assetPath);
+      return `<td width="50%" valign="top"><img src="${htmlEscape(relativePath)}" alt="${htmlEscape(filename)}" width="100%"></td>`;
+    });
+
+    lines.push("  <tr>");
+    lines.push(`    ${cells[0]}`);
+    lines.push(`    ${cells[1] ?? '<td width="50%"></td>'}`);
+    lines.push("  </tr>");
+  }
+  lines.push("</table>");
+  return lines.join("\n");
 }
 
 function writeDesignReadmes(designs) {

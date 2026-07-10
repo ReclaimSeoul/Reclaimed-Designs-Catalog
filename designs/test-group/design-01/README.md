@@ -22,6 +22,14 @@ A chair frame prototype generated from reclaimed plastic bottles using the bottl
 - [design.json](design.json)
 - [meta.json](meta.json)
 - [00_thumb.png](00_thumb.png)
+## Assets
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="assets/Gemini_Generated_Image_bmjeslbmjeslbmje.png" alt="Gemini_Generated_Image_bmjeslbmjeslbmje.png" width="100%"></td>
+    <td width="50%" valign="top"><img src="assets/Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png" alt="Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png" width="100%"></td>
+  </tr>
+</table>
 
 ---
 
