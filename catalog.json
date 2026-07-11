@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T13:23:14.705Z",
+  "generated_at": "2026-07-11T13:25:21.110Z",
   "count": 4,
   "systems": [
     {
@@ -108,7 +108,7 @@
       "id": "plasticchain45",
       "name": "plasticchain45",
       "repo": "Reclaimed-Design-Systems",
-      "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchains45",
+      "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchain45",
       "designs": [
         {
           "id": "plastic-chains_design-01",
@@ -121,7 +121,7 @@
             "id": "plasticchain45",
             "name": "plasticchain45",
             "repo": "Reclaimed-Design-Systems",
-            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchains45"
+            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchain45"
           },
           "authors": [],
           "author": "",

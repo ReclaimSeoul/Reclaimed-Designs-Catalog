@@ -12,7 +12,7 @@ A system frame prototype generated from reclaimed plastic bottles using the bott
 |---|---|
 | ID | `plastic-chains_design-01` |
 | Group | `plastic-chains` |
-| System | [plasticchain45](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchains45) |
+| System | [plasticchain45](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchain45) |
 | Units | `mm` |
 | Author | _Unknown author_ |
 | Tags | `plastic` `bottles` `Pavillion` |
