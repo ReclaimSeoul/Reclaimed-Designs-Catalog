@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-11T14:08:59.213Z",
-  "count": 5,
+  "generated_at": "2026-07-11T14:55:13.027Z",
+  "count": 6,
   "systems": [
     {
       "id": "bottles-system",
@@ -173,6 +173,44 @@
           "design_url": "designs/plastic-chains/design-01/design.json",
           "meta_url": "designs/plastic-chains/design-01/meta.json",
           "assets": []
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": "urban-climbing-vines",
+      "name": "urban-climbing-vines",
+      "repo": "Reclaimed-Design-Systems",
+      "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/urban-climbing-vines",
+      "designs": [
+        {
+          "id": "urban-climbing-vines_design-01",
+          "slug": "design-01",
+          "title": "Thrash Cover Structure",
+          "description": "A triangulated timber structure with integrated tiles, to be used to hide trash locations.",
+          "group": "urban-climbing-vines",
+          "path": "designs/urban-climbing-vines/design-01",
+          "system": {
+            "id": "urban-climbing-vines",
+            "name": "urban-climbing-vines",
+            "repo": "Reclaimed-Design-Systems",
+            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/urban-climbing-vines"
+          },
+          "authors": [],
+          "author": "",
+          "tags": [
+            "wood",
+            "trash",
+            "tiles"
+          ],
+          "units": "mm",
+          "thumbnail": "designs/urban-climbing-vines/design-01/00_thumb.png",
+          "design_url": "designs/urban-climbing-vines/design-01/design.json",
+          "meta_url": "designs/urban-climbing-vines/design-01/meta.json",
+          "assets": [
+            "designs/urban-climbing-vines/design-01/assets/Gemini_Generated_Image_bmjeslbmjeslbmje.png",
+            "designs/urban-climbing-vines/design-01/assets/Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png"
+          ]
         }
       ],
       "count": 1

@@ -37,6 +37,13 @@ Design outputs and assembled proposals generated from the Reclaim Seoul design s
 
 ### Urban Climbing Vines
 
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="designs/urban-climbing-vines/design-01"><img src="designs/urban-climbing-vines/design-01/00_thumb.png" alt="Thrash Cover Structure" width="100%"></a><br><strong><a href="designs/urban-climbing-vines/design-01">Thrash Cover Structure</a></strong><br>A triangulated timber structure with integrated tiles, to be used to hide trash locations.<br><sub><code>urban-climbing-vines_design-01</code></sub><br><sub>Units: <code>mm</code></sub><br><sub><code>wood</code> <code>trash</code> <code>tiles</code></sub><br><a href="designs/urban-climbing-vines/design-01/design.json">design.json</a> / <a href="designs/urban-climbing-vines/design-01/meta.json">meta.json</a></td>
+    <td width="50%" valign="top"></td>
+  </tr>
+</table>
+
 ## Repository structure
 
 ```text

@@ -1,21 +1,21 @@
-# Chair Frame
+# Thrash Cover Structure
 
-![Chair Frame](00_thumb.png)
+![Thrash Cover Structure](00_thumb.png)
 
 ## Description
 
-A chair frame prototype generated from reclaimed plastic bottles using the bottles design system.
+A triangulated timber structure with integrated tiles, to be used to hide trash locations.
 
 ## Information
 
 | Field | Value |
 |---|---|
-| ID | `test-group_design-01` |
-| Group | `test-group` |
-| System | [bottles-system](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/bottles-system) |
+| ID | `urban-climbing-vines_design-01` |
+| Group | `urban-climbing-vines` |
+| System | [urban-climbing-vines](https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/urban-climbing-vines) |
 | Units | `mm` |
 | Author | _Unknown author_ |
-| Tags | `furniture` `test` `plastic` `bottles` |
+| Tags | `wood` `trash` `tiles` |
 
 ## Files
 
