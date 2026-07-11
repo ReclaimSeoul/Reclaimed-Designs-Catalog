@@ -6,6 +6,13 @@ Design outputs and assembled proposals generated from the Reclaim Seoul design s
 
 ### Anonymous Coexistence
 
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="designs/anonymous-coexistence/design-01"><img src="designs/anonymous-coexistence/design-01/00_thumb.jpg" alt="melted bottles" width="100%"></a><br><strong><a href="designs/anonymous-coexistence/design-01">melted bottles</a></strong><br>A melted plastic joint and wood frame prototype generated from reclaimed plastic bottles.<br><sub><code>anonymous-coexistence-design01</code></sub><br><sub>Units: <code>mm</code></sub><br><sub><code>melted</code> <code>plastic</code> <code>pavilion</code> <code>bottles</code></sub><br><a href="designs/anonymous-coexistence/design-01/design.json">design.json</a> / <a href="designs/anonymous-coexistence/design-01/meta.json">meta.json</a></td>
+    <td width="50%" valign="top"></td>
+  </tr>
+</table>
+
 ### Plastic Chains
 
 <table>
