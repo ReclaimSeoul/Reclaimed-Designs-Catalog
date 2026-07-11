@@ -1,0 +1,21 @@
+    {
+  "id": "plastic-chains_design-01",
+  "title": "Plastic Chain Pavillion",
+  "group": "plastic-chains",
+  "system": {
+    "id": "plasticchain45",
+    "repo": "Reclaimed-Design-Systems",
+    "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticchains45"
+  },
+  "units": "mm",
+  "files": {
+    "thumbnail": "00_thumb.png",
+    "design": "design.json"
+  },
+  "tags": [
+    "plastic",
+    "bottles",
+	"Pavillion"
+  ],
+  "description": "A system frame prototype generated from reclaimed plastic bottles using the bottles chains system."
+}
