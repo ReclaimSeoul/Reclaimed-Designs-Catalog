@@ -1,0 +1,22 @@
+    {
+  "id": "anonymous-coexistence-design01",
+  "title": "melted bottles",
+  "group": "anonymous-coexistence",
+  "system": {
+    "id": "melted-plastic-2",
+    "repo": "Reclaimed-Design-Systems",
+    "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/melted-plastic-2"
+  },
+  "units": "mm",
+  "files": {
+    "thumbnail": "00_thumb.jpg",
+    "design": "design.json"
+  },
+  "tags": [
+    "melted",
+    "plastic",
+    "pavilion",
+    "bottles"
+  ],
+  "description": "A melted plastic joint and wood frame prototype generated from reclaimed plastic bottles."
+}
