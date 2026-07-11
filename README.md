@@ -18,7 +18,7 @@ Design outputs and assembled proposals generated from the Reclaim Seoul design s
 <table>
   <tr>
     <td width="50%" valign="top"><a href="designs/plastic-chains/design-01"><img src="designs/plastic-chains/design-01/00_thumb.png" alt="Plastic Chain Pavillion" width="100%"></a><br><strong><a href="designs/plastic-chains/design-01">Plastic Chain Pavillion</a></strong><br>A system frame prototype generated from reclaimed plastic bottles using the bottles chains system.<br><sub><code>plastic-chains_design-01</code></sub><br><sub>Units: <code>mm</code></sub><br><sub><code>plastic</code> <code>bottles</code> <code>Pavillion</code></sub><br><a href="designs/plastic-chains/design-01/design.json">design.json</a> / <a href="designs/plastic-chains/design-01/meta.json">meta.json</a></td>
-    <td width="50%" valign="top"></td>
+    <td width="50%" valign="top"><a href="designs/plastic-chains/design-02"><img src="designs/plastic-chains/design-02/00_thumb.png" alt="Plastic Chain Straight Pavillion" width="100%"></a><br><strong><a href="designs/plastic-chains/design-02">Plastic Chain Straight Pavillion</a></strong><br>A system frame prototype generated from reclaimed plastic bottles using the bottles chains system.<br><sub><code>plastic-chains_design-02</code></sub><br><sub>Units: <code>mm</code></sub><br><sub><code>plastic</code> <code>bottles</code> <code>Pavillion</code></sub><br><a href="designs/plastic-chains/design-02/design.json">design.json</a> / <a href="designs/plastic-chains/design-02/meta.json">meta.json</a></td>
   </tr>
 </table>
 
