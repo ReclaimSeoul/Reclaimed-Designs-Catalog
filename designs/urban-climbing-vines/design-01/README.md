@@ -26,8 +26,8 @@ A triangulated timber structure with integrated tiles, to be used to hide trash 
 
 <table>
   <tr>
-    <td width="50%" valign="top"><img src="assets/Gemini_Generated_Image_bmjeslbmjeslbmje.png" alt="Gemini_Generated_Image_bmjeslbmjeslbmje.png" width="100%"></td>
-    <td width="50%" valign="top"><img src="assets/Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png" alt="Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png" width="100%"></td>
+    <td width="50%" valign="top"><img src="assets/urban-climbing-vines-1.png" alt="urban-climbing-vines-1.png" width="100%"></td>
+    <td width="50%" valign="top"><img src="assets/urban-climbing-vines.png" alt="urban-climbing-vines.png" width="100%"></td>
   </tr>
 </table>
 

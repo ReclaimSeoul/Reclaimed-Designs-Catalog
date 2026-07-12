@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:02:42.557Z",
+  "generated_at": "2026-07-12T02:08:53.614Z",
   "count": 4,
   "systems": [
     {
@@ -141,8 +141,8 @@
           "design_url": "designs/urban-climbing-vines/design-01/design.json",
           "meta_url": "designs/urban-climbing-vines/design-01/meta.json",
           "assets": [
-            "designs/urban-climbing-vines/design-01/assets/Gemini_Generated_Image_bmjeslbmjeslbmje.png",
-            "designs/urban-climbing-vines/design-01/assets/Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png"
+            "designs/urban-climbing-vines/design-01/assets/urban-climbing-vines-1.png",
+            "designs/urban-climbing-vines/design-01/assets/urban-climbing-vines.png"
           ]
         }
       ],
