@@ -1,46 +1,7 @@
 {
-  "generated_at": "2026-07-11T15:01:36.470Z",
-  "count": 7,
+  "generated_at": "2026-07-12T00:01:20.456Z",
+  "count": 4,
   "systems": [
-    {
-      "id": "bottles-system",
-      "name": "bottles-system",
-      "repo": "Reclaimed-Design-Systems",
-      "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/bottles-system",
-      "designs": [
-        {
-          "id": "test-group_design-01",
-          "slug": "design-01",
-          "title": "Chair Frame",
-          "description": "A chair frame prototype generated from reclaimed plastic bottles using the bottles design system.",
-          "group": "test-group",
-          "path": "designs/test-group/design-01",
-          "system": {
-            "id": "bottles-system",
-            "name": "bottles-system",
-            "repo": "Reclaimed-Design-Systems",
-            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/bottles-system"
-          },
-          "authors": [],
-          "author": "",
-          "tags": [
-            "furniture",
-            "test",
-            "plastic",
-            "bottles"
-          ],
-          "units": "mm",
-          "thumbnail": "designs/test-group/design-01/00_thumb.png",
-          "design_url": "designs/test-group/design-01/design.json",
-          "meta_url": "designs/test-group/design-01/meta.json",
-          "assets": [
-            "designs/test-group/design-01/assets/Gemini_Generated_Image_bmjeslbmjeslbmje.png",
-            "designs/test-group/design-01/assets/Gemini_Generated_Image_g3ud5yg3ud5yg3ud.png"
-          ]
-        }
-      ],
-      "count": 1
-    },
     {
       "id": "melted-plastic-2",
       "name": "melted-plastic-2",
@@ -78,69 +39,6 @@
         }
       ],
       "count": 1
-    },
-    {
-      "id": "plasticbottles",
-      "name": "plasticbottles",
-      "repo": "Reclaimed-Design-Systems",
-      "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles",
-      "designs": [
-        {
-          "id": "test-group_design-03",
-          "slug": "design-03",
-          "title": "Random Test",
-          "description": "A random test prototype generated from reclaimed plastic bottles using the plasticbottles design system.",
-          "group": "test-group",
-          "path": "designs/test-group/design-03",
-          "system": {
-            "id": "plasticbottles",
-            "name": "plasticbottles",
-            "repo": "Reclaimed-Design-Systems",
-            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles"
-          },
-          "authors": [],
-          "author": "",
-          "tags": [
-            "random",
-            "test",
-            "plastic",
-            "bottles"
-          ],
-          "units": "mm",
-          "thumbnail": "designs/test-group/design-03/00_thumb.png",
-          "design_url": "designs/test-group/design-03/design.json",
-          "meta_url": "designs/test-group/design-03/meta.json",
-          "assets": []
-        },
-        {
-          "id": "test-group_design-02",
-          "slug": "design-02",
-          "title": "Small Pavillion",
-          "description": "A small pavillion prototype generated from reclaimed plastic bottles using the plasticbottles design system.",
-          "group": "test-group",
-          "path": "designs/test-group/design-02",
-          "system": {
-            "id": "plasticbottles",
-            "name": "plasticbottles",
-            "repo": "Reclaimed-Design-Systems",
-            "path": "https://github.com/ReclaimSeoul/Reclaimed-Design-Systems/tree/main/systems/plasticbottles"
-          },
-          "authors": [],
-          "author": "",
-          "tags": [
-            "pavillion",
-            "test",
-            "plastic",
-            "bottles"
-          ],
-          "units": "mm",
-          "thumbnail": "designs/test-group/design-02/00_thumb.png",
-          "design_url": "designs/test-group/design-02/design.json",
-          "meta_url": "designs/test-group/design-02/meta.json",
-          "assets": []
-        }
-      ],
-      "count": 2
     },
     {
       "id": "plasticchain",

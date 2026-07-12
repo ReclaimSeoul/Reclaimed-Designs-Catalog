@@ -5,6 +5,7 @@ const REPO_ROOT = process.cwd();
 const DESIGNS_DIR = path.join(REPO_ROOT, "designs");
 const CATALOG_PATH = path.join(REPO_ROOT, "catalog.json");
 const README_PATH = path.join(REPO_ROOT, "README.md");
+const EXCLUDED_GROUPS = new Set(["test-group"]);
 
 const GENERATED_NOTE =
   "This README was generated automatically from `meta.json` by `scripts/build_catalog.mjs`.";
@@ -126,7 +127,7 @@ function buildDesignIndex() {
   const groups = [];
   const groupFolders = fs
     .readdirSync(DESIGNS_DIR, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory())
+    .filter((entry) => entry.isDirectory() && !EXCLUDED_GROUPS.has(entry.name))
     .map((entry) => entry.name)
     .sort();
 
